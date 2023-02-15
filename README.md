@@ -3,7 +3,7 @@
 
  Сначала требуется установить все зависимости из "requirements.txt"  
 команда:
- > **_pip install -r requirements.txt_**
+ > **_pip install -r requirements.txt_**  
  Затем разархивировать файл в папке static/
 ___
 
