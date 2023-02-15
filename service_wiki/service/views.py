@@ -3,7 +3,7 @@ import json
 import time
 from django.shortcuts import render
 from .models import Content, Category, CategoryContent
-from .serializers import ContentSerializer, ContentSerializer1
+from .serializers import ContentSerializer
 
 
 def get_statistic_all(request):
@@ -36,7 +36,7 @@ def get_formatted_article(request, name):
     obj = Content.objects.get_by_natural_key(name)
     obj.timestamp = obj.timestamp.timestamp()
     obj.create_timestamp = obj.create_timestamp.timestamp()
-    return render(request, 'base.html', {'hr': ContentSerializer1(obj).data})
+    return render(request, 'base.html', {'hr': ContentSerializer(obj).data})
 
 
 def do_base(request):
