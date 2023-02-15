@@ -5,7 +5,9 @@
 команда:
  > **_pip install -r requirements.txt_**  
 
-Затем разархивировать файл в папке static/
+Затем разархивировать файл в папке static/  
+Название файла ruwikiquote-20230213-cirrussearch-general.json.gz  
+После разархивации ruwikiquote-20230213-cirrussearch-general.json
 ___
 
 ## Запуск
